@@ -1,0 +1,6 @@
+[alias]
+	lg = log --color --graph --pretty=format:'%Cred%h%Creset %Cgreen(%cr) %C(bold blue)<%an>%Creset -%C(yellow)%d%Creset %s' --abbrev-commit
+# This is commented out. Should be set but since this is public I am leaving this out.
+#[user]
+#	email = name@email.com 
+#	name  = first last 
