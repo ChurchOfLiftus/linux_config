@@ -45,6 +45,9 @@ RUN ["/bin/nvim", "-c", ":PlugInstall | :UpdateRemotePlugins | :q | :q"]
 # Fish configuration.
 RUN ["/bin/fish", "-c", "curl -sL https://raw.githubusercontent.com/jorgebucaran/fisher/main/functions/fisher.fish | source && fisher install jorgebucaran/fisher"]
 RUN ["/bin/fish", "-c", "fisher install IlanCosman/tide@v5"]
+# Note this dowloads about 3gb of data. I leave this commented out. If you want this please uncomment and wait for it to finish.
+# RUN ["/bin/fish", "-c", "fisher install ryanoasis/nerd-fonts"]
+RUN ["/bin/fish", "-c", "fisher install catppuccin/fish"]
 ADD /fish /tmp/fish
 RUN cp fish/fish_variables -r -f ~/.config/fish/fish_variables
 RUN cp fish/config.fish ~/.config/fish/config.fish

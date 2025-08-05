@@ -4,4 +4,5 @@ alias vim="nvim"
 alias vi="nvim"
 alias vimdiff='nvim -d' 
 fish_vi_key_bindings
+fish_config theme choose "Catppuccin Mocha"
 end

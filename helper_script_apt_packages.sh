@@ -1,5 +1,5 @@
 #!usr/bin/bash
-
+# Install all relative packages and set a .gitconfig file.
 sudo apt update
 sudo apt upgrade -y
 sudo apt install git -y
