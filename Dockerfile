@@ -54,6 +54,7 @@ RUN cp fish/config.fish ~/.config/fish/config.fish
 # Copy the custom functions.
 RUN cp fish/functions/ -r ~/.config/fish/
 
+RUN ["/bin/fish", "-c", "mkdir local_files"]
 
 # Change our working directory. Good place to mount to it.
 WORKDIR /workdir
